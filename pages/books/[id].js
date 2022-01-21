@@ -6,12 +6,6 @@ import { useEffect } from 'react';
 
 export default function BookId({specifiedBook})
 {
-    useEffect(()=>
-    {
-        document.getElementById('bookImg').classList.add('animationImg');
-        document.getElementById('bookDetails').classList.add('animationText');
-    },[])
-
     if(typeof specifiedBook === "string")
     {
         return (
@@ -40,9 +34,9 @@ export default function BookId({specifiedBook})
         </Link>
         <div className={styles.bookIdContainer}>
             <div className={styles.bookImg}>
-                <img id="bookImg" src={specifiedBook.volumeInfo.imageLinks?.thumbnail} />
+                <img id="bookImg" className='animationImg' src={specifiedBook.volumeInfo.imageLinks?.thumbnail} />
             </div>
-            <div id="bookDetails" className={styles.bookDetails}>
+            <div id="bookDetails" className={styles.bookDetails + " " + 'animationText'}>
                 <div className={styles.detailsHead}>
                     <h1>{specifiedBook.volumeInfo.title}</h1>
                     <span><span>Language</span> {specifiedBook.volumeInfo.language}</span>

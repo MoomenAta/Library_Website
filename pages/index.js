@@ -41,6 +41,8 @@ export default function Home({itData,programmingData}) {
     return ()=>
     {
       clearInterval(newsInterval);
+      allitIds = [];
+      allprogrammingIds = [];
     }
   },[])
   /* ACTIVITIES */
@@ -170,9 +172,7 @@ export default function Home({itData,programmingData}) {
               }
             }).map((book)=>{
               return(
-                <>
-                <Book onClick={()=>{setOpen(true); setTitleToShow(book.volumeInfo.title)}} key={book.id} id={book.id} img={book.volumeInfo.imageLinks.thumbnail} describtion={book.volumeInfo.subtitle} title={book.volumeInfo.title} />
-                </>
+                <Book key={book.id} onClick={()=>{setOpen(true); setTitleToShow(book.volumeInfo.title)}}  id={book.id} img={book.volumeInfo.imageLinks.thumbnail} describtion={book.volumeInfo.subtitle} title={book.volumeInfo.title} />
               )
             })}
             <Modal open={open} setOpen={setOpen} titleToShow={titleToShow} />
@@ -197,7 +197,7 @@ export default function Home({itData,programmingData}) {
               }
             }).map((book)=>{
               return(
-                <Book onClick={()=>{setOpen(true); setTitleToShow(book.volumeInfo.title)}} key={book.id} id={book.id} img={book.volumeInfo.imageLinks.thumbnail} describtion={book.volumeInfo.subtitle} title={book.volumeInfo.title} />
+                <Book key={book.id} onClick={()=>{setOpen(true); setTitleToShow(book.volumeInfo.title)}}  id={book.id} img={book.volumeInfo.imageLinks.thumbnail} describtion={book.volumeInfo.subtitle} title={book.volumeInfo.title} />
               )
             })}
           </div>

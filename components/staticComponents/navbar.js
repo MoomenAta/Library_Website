@@ -119,7 +119,6 @@ export default function Navbar()
             collapse.current.childNodes[0].classList.remove('close0')
             collapse.current.childNodes[1].classList.remove('close1')
             collapse.current.childNodes[2].classList.remove('close2')
-            console.log(show)
         }
 
     },[show])
