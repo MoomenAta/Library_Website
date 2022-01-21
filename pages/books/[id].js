@@ -1,11 +1,15 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import { useRouter } from "next/dist/client/router"
 import styles from '../../styles/bookId.module.css';
-import { useEffect } from 'react';
+import {useState} from 'react';
+import Modal from '../../components/modal';
+
 
 export default function BookId({specifiedBook})
 {
+    let [open , setOpen] = useState(false);
+    let [titleToShow , setTitleToShow] = useState('');
+
     if(typeof specifiedBook === "string")
     {
         return (
@@ -20,7 +24,7 @@ export default function BookId({specifiedBook})
             </>
         );
     }
-
+    
     return(
         <>
         <div>
@@ -48,8 +52,9 @@ export default function BookId({specifiedBook})
                 </div>
                 <div className={styles.detailsFooter}>
                     <p><span>Pages: </span>{specifiedBook.volumeInfo.pageCount}</p>
-                    <button type='button'>إستعارة</button>
+                    <button type='button' onClick={()=>{setOpen(true); setTitleToShow(specifiedBook.volumeInfo.title)}}>إستعارة</button>
                 </div>
+                <Modal open={open} setOpen={setOpen} titleToShow={titleToShow} />
             </div>
             <h1>{specifiedBook.volumeInfo.saleInfo?.saleability}</h1>
             <h1>{specifiedBook.volumeInfo.accessInfo?.pdf.isAvailable}</h1>
