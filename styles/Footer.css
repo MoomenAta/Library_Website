@@ -1,0 +1,135 @@
+footer 
+{
+    background-color: #1B264F;
+    height: 22.5rem;
+    padding-top: 2.5rem;
+}
+.emailSubs
+{
+    width: 90%;
+    padding: 0 5rem;
+    height: 11rem;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #10162E;
+    color: white;
+}
+.emailSubs .textContent
+{
+    width: 50%;
+}
+.emailSubs .textContent h3 
+{
+    font-size: 2.2rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+.emailSubs .inputContent
+{
+    display: flex;
+    align-items: center;
+    
+    width: 50%;
+}
+.emailSubs .inputContent input 
+{
+    width: 80%;
+    height: 64px;
+    outline: none;
+    border: none;
+    padding: 1rem;
+}
+.emailSubs .inputContent button 
+{
+    width: 128px;
+    height: 64px;
+    outline: none;
+    border: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.copyrightContainer 
+{
+    width: 90%;
+    margin: 5rem auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+.copyrightContainer ul 
+{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    width: 100%;
+}
+.copyrightContainer ul li
+{
+    width: 32px;
+    height: 32px;
+    background-color: #10162e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:672px) {
+    .emailSubs 
+    {
+        flex-wrap: wrap;
+        padding: 0 2rem;
+    }
+    .emailSubs .textContent h3
+    {
+        font-size: 1.2rem;
+    }
+    .emailSubs .textContent
+    {
+        width: 100%;
+    }
+    .emailSubs .inputContent
+    {
+        width: 100%;
+    }
+    .emailSubs .inputContent button , .emailSubs .inputContent input
+    {
+        height: 48px;
+    }
+    .copyrightContainer
+    {
+        margin: 1.5rem auto;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .copyrightContainer ul 
+    {
+        width: 100%;
+        order: 0;
+        margin: 1rem 0;
+    }
+    .copyrightContainer p 
+    {
+        order: 1;
+    }
+}
+@media screen and (max-width:768px) {
+    .emailSubs 
+    {
+        flex-wrap: wrap;
+        padding: 0 2rem;
+    }
+    .emailSubs .textContent h3
+    {
+        font-size: 1.2rem;
+    }
+}

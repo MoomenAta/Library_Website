@@ -1,0 +1,59 @@
+.services 
+{
+    width: 76%;
+    margin: 1rem 0;
+}
+.activeCategory 
+{
+    margin: 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.service
+{
+    cursor: pointer;
+    position: relative;
+    width: 20.5rem;
+    height: 15rem;
+}
+.service img 
+{
+    width: 100%;
+}
+.info
+{
+    width: 100%;
+    opacity: 0;
+    color: white;
+    position: absolute;
+    bottom: 20%;
+    padding: 1rem;
+    background-image: linear-gradient(to top , black , rgba(0, 0, 0, 0.021));
+    transition: 300ms opacity ease-in-out;
+}
+.info h3 
+{
+    font-size: 1.4rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid white;
+    margin: 0.5rem 0;
+}
+.service:hover .info 
+{
+    opacity: 1;
+}
+
+/* VOICE BOOKS  */
+.iframediv 
+{
+    width: 100%;
+}
+
+/* MOBILE */
+@media screen and (max-width:768px) {
+    .services
+    {
+        width: 90%;
+    }
+}

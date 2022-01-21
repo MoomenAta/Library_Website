@@ -1,0 +1,112 @@
+.membership
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.membership > *
+{
+    padding: 0.5rem 0;
+}
+.membership > h1 
+{
+    font-size: 2rem;
+}
+
+.membershipCards
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: flex-start;
+    justify-content: center;
+}
+.card
+{
+    max-width: 14rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(230, 230, 230);
+    border-radius: 3px;
+    box-shadow: 0 0 14px rgba(20, 20, 20, 0.082);
+}
+.card > *
+{
+    padding: 0.5rem 0;
+}
+.card > h3
+{
+    font-size: 1.4rem;
+    padding: 1rem 0;
+}
+.card > p
+{
+    font-weight: bold;
+}
+.card .price 
+{
+    width: 100%;
+    background-color: rgb(196, 196, 196);
+    font-size: 1rem;
+    padding: 1.7rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+.card .price span 
+{
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: red;
+}
+.card > ul 
+{
+    padding: 0.5rem;
+    list-style-position: inside;
+}
+.card button 
+{
+    padding: 0.5rem 1.8rem;
+    border: none;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    margin: 0.5rem;
+    cursor: pointer;
+    transition: transform 500ms ease-in-out;
+}
+.card button:hover
+{
+    transform: scale(1.1,1.1);
+}
+.notes 
+{
+    width: 82%;
+    margin: 0 auto;
+    background-color: rgb(219, 219, 219);
+    padding: 4rem;
+}
+.notes h1
+{
+    font-size: 2rem;
+}
+.notes ul 
+{
+    list-style-position: inside;
+}
+
+/* MOBILE */
+@media screen and (max-width:432px) {
+    .membership
+    {
+        width: 90%;
+    }
+    .card 
+    {
+        max-width: 90%;
+    }
+}

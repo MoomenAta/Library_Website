@@ -1,0 +1,13 @@
+.blog_section
+{
+    width: 76%;
+}
+
+@media screen and (max-width:768px) {
+    .blog_section 
+    {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+}

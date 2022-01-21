@@ -1,0 +1,96 @@
+
+.search_section
+{
+    display: flex;
+    flex-wrap: wrap;
+    height: 12rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: #1B264F;
+}
+.search_section input 
+{
+    height: 2.8rem;
+    padding: .5rem;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+}
+.search_section input:nth-child(1)
+{
+    width: 30rem;
+}
+.search_section input:nth-child(2)
+{
+    width: 15rem;
+}
+.search_section button 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 500;
+    width: 8rem;
+    height: 2.8rem;
+    background-color: #2C3F82;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.main_section 
+{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.books_section 
+{
+    width: 76%;
+}
+.categoryBooks_section 
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+@media screen and (max-width:768px) {
+    .books_section
+    {
+        width: 100%;
+    }
+}
+
+/* MOBILE STYLE */
+@media screen and (max-width:432px) {
+
+    /* INPUT SEARCH */
+    .search_section input:nth-of-type(1)
+    {
+        width: 90%;
+    }
+    .search_section input:nth-of-type(2) , .search_section input:nth-of-type(3)
+    {
+        width: 43%;
+    }
+    .books_section 
+    {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .categoryBooks_section
+    {
+        margin: 0 auto;
+        width: 100%;
+        justify-content: center;
+    }
+    
+}

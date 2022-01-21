@@ -1,0 +1,159 @@
+.mainContent
+{
+    width: 76%;
+}
+.part 
+{
+    margin: 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.fwidth
+{
+    width: 47%;
+    padding: 0.5rem;
+    margin: 1rem 0.5rem;
+    background-color: #FFFFFF;
+    border-radius: 3px;
+}
+.part_1 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.part_1 > *
+{
+    text-align: center;
+}
+.part_1 h2 
+{
+    font-size: 1.7rem;
+}
+.part_1 > p 
+{
+    width: 80%;
+    margin: 1rem 0;
+}
+.part_1 > img
+{
+    width: 51%;
+}
+.part_2 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.part_2 > *
+{
+    text-align: center;
+}
+.part_2 h1 
+{
+    font-size: 1.7rem;
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+}
+.part_2 > img
+{
+    width: 100%;
+}
+.part_3 h1 
+{
+    margin: 1rem 0;
+    font-size: 1.7rem;
+    gap: 1rem;
+    display: flex;
+}
+.part_3 form input , .part_3 form textarea
+{
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(233, 233, 233);
+    outline:rgb(57, 57, 255) ;
+}
+.part_3 form textarea
+{
+    resize: vertical;
+}
+.part_3 button 
+{
+    width: 96px;
+    height: 2.5rem;
+    font-weight: 700;
+    border: none;
+    text-align: center;
+    background-color: #09BC8A;
+    color: white;
+    margin: 1rem 0;
+}
+.part_4
+{
+    height: max-content;
+}
+.part_4 h1 
+{
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    font-size: 1.7rem;
+    line-height: 0;
+    gap: 1rem;
+}
+.part_4 > p 
+{
+    margin: 0.5rem 0;
+}
+.teleFax 
+{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.teleFax > p
+{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.emails
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0.5rem 0;
+}
+.emails > p
+{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0.5rem 0;
+}
+
+
+@media screen and (max-width:768px) {
+    .mainContent , .part , .part_1 , .part_2 , .part_3 , .part_4 
+    {
+        width: 100%;
+    }
+    .part_2
+    {
+        height: 500px;
+    }
+    .part_3 button 
+    {
+        width: 100%;
+    }
+    .teleFax > p 
+    {
+        flex-wrap: wrap;
+        direction: ltr;
+    }
+}

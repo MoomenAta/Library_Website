@@ -1,0 +1,146 @@
+.back
+{
+    margin-top: 1em;
+    margin-right: 93%;
+    display: block;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    font-size: 1.4em;
+    border-radius: 50%;
+    background-color: rgb(236, 236, 236);
+    box-shadow: 0 0 14px rgba(39, 39, 39, 0.199);
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+.bookIdContainer 
+{
+    direction: ltr;
+    box-shadow: 0 0 14px rgba(39, 39, 39, 0.055);
+    width: 90%;
+    margin: 1em auto;
+    border-radius: 8px;
+    padding: 1em;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.bookIdContainer  *
+{
+    direction: ltr;
+}
+.bookImg
+{
+    width: 48%;
+}
+.bookImg img 
+{
+    transform: scale(0,1);
+    transform-origin: left;
+    width: 100%;
+    border-radius: 6px;
+    transition: all 500ms ease-in-out;
+}
+.bookDetails 
+{
+    overflow: hidden;
+    position: relative;
+    width: 48%;
+    left: -100%;
+    opacity: 0;
+    transition: all 500ms ease-in-out;
+}
+.detailsHead 
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.detailsHead h1
+{
+    font-size: 2em;
+}
+.detailsHead span 
+{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.detailsHead span > span 
+{
+    font-size: 0.5em;
+    font-weight: normal;
+}
+.detailsHead p 
+{
+    font-size: 1.8em;
+}
+.detailsHead > p 
+{
+    width: 100%;
+}
+.detailsBody
+{
+    margin: 2em 0;
+}
+.detailsBody p 
+{
+    min-height: 8em;
+    margin: 0.5em 0;
+    background-color: rgb(243, 243, 243);
+    border-radius: 3px;
+    padding: 1em;
+}
+.detailsFooter
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+}
+.detailsFooter p 
+{
+    background-color: rgb(231, 231, 231);
+    border-radius: 3px;
+    width: 48%;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.8em;
+}
+.detailsFooter p >span
+{
+    font-weight: normal;
+    font-size: 0.9em;
+}
+.detailsFooter button
+{
+    cursor: pointer;
+    width: 60%;
+    padding: 0.8em;
+    border: none;
+    background-color: #09bc8a;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+}
+
+@media screen and (max-width:425px) {
+    .back
+    {
+        margin-right: 86%;
+    }
+    .bookIdContainer
+    {
+        flex-wrap: wrap;
+    }
+    .bookImg
+    {
+        width: 100%;
+    }
+    .bookDetails
+    {
+        width: 100%;
+    }
+    
+}

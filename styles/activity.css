@@ -1,0 +1,137 @@
+.more
+{
+    display: block;
+    text-decoration-line: underline;
+    height: 3rem;
+    margin-right: auto;
+    background-color: unset;
+    width: 8rem;
+    border: none;
+    cursor: pointer;
+}
+.more span
+{
+    color: #09BC8A;
+}
+.activity
+{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+    margin: 1rem 0;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0 0 20px #0000000a;
+}
+.textPart 
+{
+    width: 50%;
+}
+.activity .textPart h3 
+{
+    font-size: 2.4rem;
+}
+.activity .textPart .date
+{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    height: 3rem;
+}
+.activity .textPart .date p
+{
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+.textPart > p 
+{
+    height: 12rem;
+    width: 70%;
+    font-size: 1.3rem;
+}
+.activity .buttons 
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+.buttons button 
+{
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 0.5rem;
+    width: 8rem;
+}
+.buttons button:nth-child(3)
+{
+    color: red;
+    font-weight: 600;
+}
+.buttons button:nth-child(4)
+{
+    background-color: #09BC8A;
+    color: white;
+    font-weight: bold;
+    width: 8rem;
+}
+.buttons button span 
+{
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+.imgPart 
+{
+    width: 50%;
+    direction: ltr;
+}
+.imgPart img 
+{
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+}
+
+@media screen and (max-width : 768px) {
+    *
+    {
+        font-size: 100%;
+    }
+    .activity 
+    {
+        gap: 1rem ;
+    }
+    .activity .textPart 
+    {
+        width: 100%;
+        order: 2;
+    }
+    .activity .imgPart 
+    {
+        width: 100%;
+        order: 1;
+    }
+}
+@media screen and (max-width : 425px) {
+    .activity .textPart 
+    {
+        width: 100%;
+    }
+    .activity .imgPart 
+    {
+        width: 100%;
+    }
+    .textPart > p 
+    {
+        width: 100%;
+    }
+    .buttons > button , .buttons button:nth-child(4)
+    {
+        width: 48%;
+    }
+    
+}

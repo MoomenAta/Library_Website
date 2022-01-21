@@ -1,0 +1,222 @@
+.active 
+{
+    font-weight: bold;
+    color: #E74C3C;
+}
+.container 
+{
+    position: relative;
+    width: 100%;
+    background-color: #F8F8F8;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.075);
+    padding: 1.4rem 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.navigation 
+{
+    display: flex;
+}
+.ul
+{
+    width: 100%;
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-between;
+}
+.ul li 
+{
+    cursor: pointer;
+    padding: 0.5rem;
+    width: max-content;
+}
+.searchContainer 
+{
+    direction: ltr;
+    display: flex;
+}
+.searchContainer button 
+{
+    width: 2.6rem;
+    height: 2.5rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #09BC8A;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+}
+.searchContainer input 
+{
+    transform: scaleX(0);
+    transform-origin: left;
+    width: 0rem;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    transition: 500ms transform ease-in-out;
+}
+.h3 
+{
+    font-size: 146%;
+    color: #E74C3C;
+    font-weight: 700;
+}
+.li 
+{
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+#navCollapseContainer
+{
+    display: none;
+}
+.navCollapse 
+{
+    display: none;
+}
+@media screen and (max-width : 768px) {
+    .h3 
+    {
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+    .ul 
+    {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 50%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        z-index: 99999;
+        height: 100%;
+        background-color: rgb(220, 220, 255);
+        transition: left 800ms ease-in-out;
+    }
+    .ul li 
+    {
+        padding: 10% 16%;
+        width: 100%;
+    }
+    .content
+    {
+        justify-content: space-between;
+    }
+    .searchContainer 
+    {
+        margin-left: 2.2rem;
+    }
+    .searchContainer button 
+    {
+        width: 2.2rem;
+        height: 2rem;
+    }
+    .searchContainer button img 
+    {
+        width: 1rem;
+    }
+    #navCollapseContainer 
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgb(236, 236, 236);
+        padding: 0.1rem;
+        border-radius: 6px;
+        cursor: pointer;
+        position: fixed;
+        width: 40px;
+        height: 40px;
+        left: 1.3rem;
+        z-index: 999999;
+        transition: all 500ms ease-in-out;
+    }
+    .collapseSpans span 
+    {
+        position: relative;
+        width: 90%;
+        height: 4px;
+        margin: 2px;
+        background-color: black;
+        border-radius: 3px;
+        display: block;
+        transform-origin: center;
+        transition: all 500ms ease-in-out;
+    }
+    .collapseSpans span:nth-of-type(1)
+    {
+        top: 0;
+        transform: rotate(0deg);
+    }
+    .collapseSpans span:nth-of-type(3)
+    {
+        bottom: 0;
+        transform: rotate(0deg);
+    }
+    .close0
+    {
+        top: 10px !important;
+        transform: rotate(-45deg) !important;
+    }
+    .close1
+    {
+        background-color: unset !important;
+    }
+    .close2
+    {
+        bottom: 6px !important;
+        transform: rotate(45deg) !important;
+    }
+    .rotate 
+    {
+        transform: rotate(90deg);
+        position: fixed !important;
+    }
+    
+    .active
+    {
+        font-weight: bold;
+        color: #E74C3C;
+        background-color: aliceblue;
+    }
+    .ulLeft 
+    {
+        left: 0 !important;
+    }
+}
+@media screen and (max-width : 425px)
+{
+    .h3 
+    {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    .searchContainer 
+    {
+        margin-left: 2.6rem;
+    }
+    .searchContainer input 
+    {
+        max-width: 9rem;
+        padding: 0 0.5rem;
+    }
+    #navCollapseContainer 
+    {
+        left: 1.3rem;
+    }
+}
+@media screen and (max-height : 425px ) and (max-width : 768px) {
+    .ul li 
+    {
+        padding: 3% 16%;
+        width: 100%;
+    }
+}

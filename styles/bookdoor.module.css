@@ -1,0 +1,34 @@
+.bookdoor 
+{
+    width: 100%;
+}
+.bookdoor img 
+{
+    width: 80%;
+}
+.bookdoor h1 
+{
+    font-size: 2rem;
+}
+.bookdoor p 
+{
+    padding: 1rem 0;
+}
+.bookdoor button 
+{
+    padding: 0.8rem 2rem;
+    border: none;
+    background-color: red;
+    color: white;
+}
+@media screen and (max-width:432px) {
+
+    .bookdoor img 
+    {
+        width: 100%;
+    }
+    .bookdoor button 
+    {
+        width: 100%;
+    }
+}

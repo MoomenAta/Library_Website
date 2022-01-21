@@ -1,0 +1,64 @@
+.aboutUs 
+{
+    width: 76%;
+}
+.welcomePart 
+{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.welcomePart h2 
+{
+    font-size: 2.6rem;
+    padding: 0.5rem;
+    text-align: center;
+}
+.welcomePart p 
+{
+    text-align: center;
+    width: 88%;
+    padding: 1rem;
+}
+.building
+{
+    padding: 0.5rem;
+    margin: 2rem 0;
+}
+.building > p
+{
+    width: 50%;
+}
+.libraryPhilo
+{
+    padding: 0.5rem;
+    background-color: #EEECEC;
+    margin: 1rem 0;
+}
+.libraryPhilo>p 
+{
+    width: 50%;
+}
+
+@media screen and (max-width:768px) {
+
+    .aboutUs
+    {
+        width: 90%;
+    }
+    .welcomePart 
+    {
+        width: 100%;
+    }
+    .welcomePart h2 
+    {
+        font-size: 1.7rem;
+    }
+    .welcomePart p ,.building > p,.libraryPhilo>p 
+    {
+        width: 100%;
+    }
+}
